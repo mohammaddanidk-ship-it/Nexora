@@ -1,10 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Vercel performs its own serverless packaging. Standalone output is only
-  // needed for self-hosted deployments and triggers a known Next 16.3 adapter
-  // NFT issue on Vercel.
-  output: "standalone",
   reactStrictMode: false,
   typescript: { ignoreBuildErrors: false },
   allowedDevOrigins: ["*.space-z.ai", "preview-*.space-z.ai"],
