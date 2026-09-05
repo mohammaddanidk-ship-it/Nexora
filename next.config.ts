@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  output: process.env.VERCEL ? undefined : "standalone",
   reactStrictMode: false,
   typescript: { ignoreBuildErrors: false },
   allowedDevOrigins: ["*.space-z.ai", "preview-*.space-z.ai"],
